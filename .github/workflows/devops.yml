@@ -30,7 +30,7 @@ jobs:
             npm install
 
             echo "Restarting application..."
-            pm2 restart node-cicd-test-demo
+            sudo pm2 restart node-cicd-test-demo
             #pm2 restart all
             
 
