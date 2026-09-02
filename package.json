@@ -1,5 +1,5 @@
 {
-"name": "node-cicd-demo",
+"name": "node-cicd-test-demo",
 "version": "1.0.0",
 "description": "Simple Node.js application for GitHub Actions and AWS EC2 CI/CD",
 "main": "app.js",

@@ -16,11 +16,11 @@ jobs:
       - name: Deploy to EC2
         uses: appleboy/ssh-action@v1.2.0
         with:
-          host: ${{ secrets.EC2_HOST }}
+          host: ${{ secrets.NEWPROJECT_HOST }}
           username: ec2-user
-          key: ${{ secrets.EC2_SSH_KEY }}
+          key: ${{ secrets.NEWPROJECT_SSHKEY }}
           script: |
-            cd ~/node-cicd-demo/aws-ec2-cicd
+            cd ~/node-cicd-test-demo/cicd-test-ec2
 
             echo "Getting latest code..."
             git fetch origin
@@ -30,7 +30,7 @@ jobs:
             npm install
 
             echo "Restarting application..."
-            pm2 restart node-cicd-demo
+            pm2 restart node-cicd-test-demo
             #pm2 restart all
             
 
