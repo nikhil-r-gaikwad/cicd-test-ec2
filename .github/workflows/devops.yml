@@ -20,7 +20,7 @@ jobs:
           username: ec2-user
           key: ${{ secrets.NEWPROJECT_SSHKEY }}
           script: |
-            cd ~/node-cicd-test-demo/cicd-test-ec2
+            cd /home/ec2-user/node-cicd-test-demo/cicd-test-ec2
 
             echo "Getting latest code..."
             git fetch origin
@@ -30,7 +30,7 @@ jobs:
             npm install
 
             echo "Restarting application..."
-            sudo pm2 restart node-cicd-test-demo
+            sudo pm2 restart node-cicd-test-demo --update-env
             #pm2 restart all
             
 
