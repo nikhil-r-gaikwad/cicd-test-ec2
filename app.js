@@ -1,8 +1,8 @@
-const http = require("http");
+const https = require("https");
 
-const PORT = 80;
+const PORT = 443;
 
-const server = http.createServer((req, res) => {
+const server = https.createServer((req, res) => {
     res.writeHead(200, {
         "Content-Type": "text/html"
     });

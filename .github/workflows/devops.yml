@@ -27,7 +27,7 @@ jobs:
             git reset --hard origin/main
 
             echo "Installing dependencies..."
-            npm install
+            sudo npm install
 
             echo "Restarting application..."
             sudo pm2 restart node-cicd-test-demo --update-env
