@@ -8,8 +8,10 @@ const server = http.createServer((req, res) => {
     });
 
     res.end(`
-        <h1>Hello from Node.js team by #Nikhil#   !!!!</h1>
-        <p>Application deployed using GitHub Actions → AWS EC2</p>
+        <body style="background-color: #3498db;">
+            <h1>Hello from Node.js team by Nikhil   !!!!</h1>
+            <p>Application deployed using GitHub Actions → AWS EC2</p>
+        </body>
     `);
 });
 
