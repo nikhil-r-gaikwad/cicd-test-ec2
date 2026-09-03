@@ -31,7 +31,6 @@ jobs:
 
             echo "Restarting application..."
             pm2 restart node-cicd-test-demo --update-env
-            #pm2 restart all
             
 
             echo "Deployment completed!"
