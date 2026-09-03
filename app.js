@@ -8,7 +8,7 @@ const server = http.createServer((req, res) => {
     });
 
     res.end(`
-        <body style="background-color: #3498db;">
+        <body style="background-color: #7b3914;">
             <h1>Hello from Node.js team by Nikhil   !!!!</h1>
             <p>Application deployed using GitHub Actions → AWS EC2</p>
         </body>
